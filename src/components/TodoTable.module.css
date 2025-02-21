@@ -1,0 +1,164 @@
+.container {
+    background-color: #373e45;
+    display: flex;
+    height: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 80px 0 80px;
+}
+
+.content {
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #FFFFFF50;
+    font-size: 0.875rem;
+}
+
+/* Стили таблицы */
+.tableWrapper {
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #ffffff26;
+    overflow: clip;
+}
+
+.tableContainer {
+    height: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: transparent;
+}
+
+.table th {
+    background-color: #373e45;
+    padding: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: left;
+    color: #FFFFFF50;
+    border-bottom: 1px solid #ffffff26;
+}
+
+.numberHeader {
+    width: 4rem;
+    padding-left: 1.5rem !important;
+}
+
+.countHeader {
+    text-align: right !important;
+    padding-right: 1.5rem !important;
+}
+
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+.table tbody tr:hover {
+    background-color: #ffffff0a;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.numberCell {
+    width: 4rem;
+    color: #FFFFFF50;
+    padding-left: 1.5rem !important;
+}
+
+
+.userCell {
+    padding: 0.75rem 1rem !important;
+}
+
+.countCell {
+    text-align: right;
+    padding-right: 1.5rem !important;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+.avatar img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.userName {
+    font-weight: 500;
+}
+
+.userEmail {
+    font-size: 0.7rem;
+    color: #FFFFFF50;
+}
+
+
+@media (max-width: 640px) {
+
+    .container {
+        padding: 56px 20px 0 20px;
+    }
+
+    .tableHead {
+        font-size: 0.2rem
+
+    }
+
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+
+    .numberHeader,
+    .numberCell {
+        width: 3rem;
+        padding-left: 1rem;
+    }
+
+    .countHeader,
+    .countCell {
+        padding-right: 20px;
+    }
+
+    .userName {
+        font-size: 0.8rem;
+    }
+
+    .userEmail {
+        font-size: 0.6rem;
+    }
+}
